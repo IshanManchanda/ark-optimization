@@ -37,8 +37,8 @@ int main() {
 	// Cost for last element
 	minCostMatrixA[n - 1][n - 1] = costMatrixA[n - 1][n - 1];
 	// Cost for remaining elements in the last row
-	for (i = n - 2; i >= 0; --i)
-		minCostMatrixA[n - 1][i] = costMatrixA[n - 1][i] + minCostMatrixA[n - 1][i + 1];
+	for (j = n - 2; j >= 0; --j)
+		minCostMatrixA[n - 1][j] = costMatrixA[n - 1][j] + minCostMatrixA[n - 1][j + 1];
 
 	for (i = n - 2; i >= 0; --i) {
 		// Cost for last column in row i
@@ -53,8 +53,8 @@ int main() {
 	// Same procedure for B, we do them separately to maximize chance of cache hits
 	// Costs for last element and last row
 	maxCostMatrixB[n - 1][n - 1] = costMatrixB[n - 1][n - 1];
-	for (i = n - 2; i >= 0; --i)
-		maxCostMatrixB[n - 1][i] = costMatrixB[n - 1][i] + maxCostMatrixB[n - 1][i + 1];
+	for (j = n - 2; j >= 0; --j)
+		maxCostMatrixB[n - 1][j] = costMatrixB[n - 1][j] + maxCostMatrixB[n - 1][j + 1];
 
 	for (i = n - 2; i >= 0; --i) {
 		// Cost for last column
