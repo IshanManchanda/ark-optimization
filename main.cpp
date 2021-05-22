@@ -1,7 +1,8 @@
+#pragma GCC target("avx,avx2,fma")
+
 #include <bits/stdc++.h>
 #include <iostream>
 #include <omp.h>
-
 using namespace std;
 
 #define n 1000
