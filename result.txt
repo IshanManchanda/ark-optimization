@@ -1,0 +1,4 @@
+On WSL2, runtime is about 110ms ± 4ms.
+On Windows with mingw g++, runtime is between 140 and 155ms.
+
+Both are run with the -fopenmp and -O3 flags.
