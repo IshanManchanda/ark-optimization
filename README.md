@@ -7,5 +7,5 @@ On Windows with MinGW-w64 g++, runtime is about 105ms ± 3ms.
 Both are compiled with the -fopenmp and -O3 flags.
 
 ### Project Structure
-The ArkOptimisation.cpp file has been retained for reference,
 main.cpp is the actual project file.
+The ArkOptimisation.cpp file has been retained for reference.
